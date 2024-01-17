@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIST Sports Events</title>
+    <link rel="stylesheet" href="fullPage.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="fullPage.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ecf0f1;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 2em;
+            position: relative;
+        }
+
+        #logo {
+            position: absolute;
+            top: 20px;
+            left: 60px;
+            max-height: 150px;
+        }
+
+        #nav {
+            background: linear-gradient(45deg, #63658f, #8f94fb);
+            padding: 1em;
+            display: flex;
+            justify-content: space-around;
+            z-index: 1000;
+            transition: background 0.5s ease;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        #nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        #nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 8px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        #nav a:hover {
+            color: #393b59;
+            transform: scale(1.1);
+        }
+
+        #fullpage {
+            background: #58636e;
+        }
+
+        .section {
+            text-align: center;
+            background: linear-gradient(to bottom, #8b4a4a, #d7dce1);
+            position: relative;
+        }
+
+        .quote-container {
+            position: absolute;
+            top: 30%;
+            left: 10%;
+            transform: translate(0, -50%);
+            color: rgb(64, 134, 82);
+            text-shadow: 2px 2px 4px rgba(16, 209, 103, 0.7);
+            width: 40%;
+            max-width: 300px;
+            background-color: rgba(255, 255, 255, 0.8); /* Light-colored panel */
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .quote-container h2 {
+            margin: 0;
+        }
+
+        section img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+            filter: grayscale(50%);
+            transition: filter 0.5s ease, transform 0.5s ease;
+        }
+
+        section img:hover {
+            filter: grayscale(0%);
+            transform: scale(1.1);
+        }
+
+        .hero-text {
+            color: #333;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .section-content {
+            max-width: 800px;
+            margin: 0 auto;
+            color: #555;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #dee2e6;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .footer-content div {
+            margin: 10px;
+        }
+
+        .footer-logo {
+            max-width: 100px;
+        }
+
+        .footer-contact {
+            text-align: left;
+            color: #ecf0f1; /* Change to a soothing text color */
+        }
+
+        .footer-contact p {
+            margin: 0;
+        }
+
+        .footer-location {
+            text-align: right;
+            color: #ecf0f1; /* Change to a soothing text color */
+        }
+
+        .card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: left;
+        }
+
+        .icon img {
+            max-width: 200px;
+            margin-right: 20px;
+        }
+
+        .card__body {
+            flex: 1;
+        }
+
+        h3 {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+        
+    
+<div id="fullpage">
+    <div class="section" id="home">
+        <header>
+            <img id="logo" src="https://mist.ac.in/images/logos/logo1.jpg" alt="MIST Logo">
+            <h1>MAHAVEER INSTITUTE OF SCIENCE AND TECHNOLOGY</h1>
+            <h3>SPORTS AND GAMES</h3>
+        </header>
+           
+        <nav id="nav">
+            <ul>
+                <li data-menuanchor="home"><a href="#home">Home</a></li>
+                <li data-menuanchor="sports"><a href="#sports">Sports</a></li>
+                <li data-menuanchor="events"><a href="#events">Events</a></li>
+                <li data-menuanchor="awards"><a href="#awards">Awards</a></li>
+                <li data-menuanchor="contacts"><a href="https://contactsmist.netlify.app/">Contacts</a></li>
+            </ul>
+        </nav>
+
+            <div class="section" id="home">
+                <div class="quote-container">
+                    <h2>Enjoying success requires the ability to adapt. Only be being open to change will you have a true opportunity to get the most from your talent. </h2>
+                    <p>- Nolan Ryan, professional baseball player</p>
+                </div>
+                <img src="https://www.mist.ac.in/images/slider/banner-2.jpg" alt="MIST Sports" />
+                <div class="section-content">
+                    <div class="card">
+                        <div class="icon">
+                            <img src="https://mist.ac.in/images/saidaiah-pd.jpg" alt="MIST Sports" />
+                        </div>
+                        <div class="card__body">
+                            <h1>Mr. Ch. Saidaiah(Physical Director)</h1>
+                            <h3>
+                                Mr. Ch. Saidaiah Physical Director has completed his BPEd from RAYALASEEMA COLLEGE OF PHYSICAL EDUCATION PRODDATUR KADAPA in 2007.
+                                He has done his MPEd Acharya nagarjuna university college, Acharya nagarjuna university Guntur in 2010.
+                                He joined as a physical director in Mahaveer institute of science & technology in the year 2010.
+                                He has 12 years of experience in Physical Education.
+                                His specializations are KABADDI, HAND BALL & CRICKET.
+                            </h3>
+                        </div>
+                    </div>
+                    <div>
+                        <p>
+                            <h3>Explore the exciting world of sports at our college. From competitive teams to state-of-the-art facilities,
+                            we have everything you need to stay active and engaged.</h3>
+                        </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <img class="footer-logo" src="https://mist.ac.in/images/logos/logo1.jpg" alt="MIST Logo">
+            </div>
+            <div class="footer-contact">
+                <p>&copy; 2023 MIST Sports</p>
+                <p>Cell No: 9246201788</p>
+                <p>Email: syeddon486@gmail.com</p>
+            </div>
+            <div class="footer-location">
+                <p>Get In Touch:</p>
+                <p><strong>Vyasapuri, Bandlaguda.</strong></p>
+                <p><em>Post: Keshavgiri, Hyderabad- 500 005, Telangana, India.</em></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                anchors: ['home', 'sports', 'events', 'awards', 'contacts'],
+                menu: '#nav',
+                scrollOverflow: true,
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
